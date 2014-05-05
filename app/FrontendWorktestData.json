@@ -1,0 +1,56 @@
+[
+{
+  "id": 1,
+  "order": 1,
+  "name": "Dress 1",
+  "img": "https://s3.amazonaws.com/virtusize-misc/frontend-worktest/dress_1.jpg"
+},
+{
+  "id": 2,
+  "order": 2,
+  "name": "Dress 2",
+  "img": "https://s3.amazonaws.com/virtusize-misc/frontend-worktest/dress_2.jpg"
+},
+{
+  "id": 3,
+  "order": 3,
+  "name": "Dress 3",
+  "img": "https://s3.amazonaws.com/virtusize-misc/frontend-worktest/dress_3.jpg"
+},
+{
+  "id": 4,
+  "order": 4,
+  "name": "Dress 4",
+  "img": "https://s3.amazonaws.com/virtusize-misc/frontend-worktest/dress_4.jpg"
+},
+{
+  "id": 5,
+  "order": 5,
+  "name": "Dress 5",
+  "img": "https://s3.amazonaws.com/virtusize-misc/frontend-worktest/dress_5.jpg"
+},
+{
+  "id": 6,
+  "order": 6,
+  "name": "Dress 6",
+  "img": "https://s3.amazonaws.com/virtusize-misc/frontend-worktest/dress_6.jpg"
+},
+{
+  "id": 7,
+  "order": 7,
+  "name": "Dress 7",
+  "img": "https://s3.amazonaws.com/virtusize-misc/frontend-worktest/dress_7.jpg"
+},
+{
+  "id": 8,
+  "order": 8,
+  "name": "Dress 8",
+  "img": "https://s3.amazonaws.com/virtusize-misc/frontend-worktest/dress_8.jpg"
+},
+{
+  "id": 9,
+  "order": 9,
+  "name": "Dress 9",
+  "img": "https://s3.amazonaws.com/virtusize-misc/frontend-worktest/dress_9.jpg"
+}
+]

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Wardrobe with dresses</title>
+    <link rel="stylesheet" href="style/css/main.css">
+    <link rel="author" href="humans.txt">
+  </head>
+  <body>
+
+    <!-- Application "hook" -->
+    <div id="app"></div>
+
+    <!-- Garment Template -->
+    <script type="text/template" id="garmentTmpl">
+      <div class="wrapper" data-order="<%= order %>">
+        <img src="<%= img %>" alt="" />
+        <span title="Remove garment" class="fi-x size-21 action delete"></span>
+        <div class="details-wrapper">
+          <div class="details">
+            <span class="title" title="<%= name %>"> <%= name %> </span>
+            <span title="Edit garment" class="fi-pencil size-21 action edit"></span>
+          </div>
+          <div class="edit-section">
+            <input class="title" type="text" value="<%= name %>">
+            <div class="edit-actions">
+              <span title="Approve" class="fi-check size-21 action approve "></span>
+              <span title="Cancel" class="fi-x size-21 action cancel"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <!-- Requirejs -->
+    <script data-main="scripts/main.js" src="scripts/vendor/requirejs/require.js"></script>
+
+  </body>
+</html>

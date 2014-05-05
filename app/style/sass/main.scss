@@ -1,0 +1,130 @@
+@import "compass";
+@import "foundation-fonts";
+
+body {
+  background: #FFF2E5;
+}
+.columns {
+  margin: 0 auto;
+  width: 801px;
+
+  div.column:hover .delete,
+  div.column:hover .edit {
+    display: block;
+  }
+  div.column.over {
+    border: 2px dashed #000;
+  }
+  div.column.draghover .wrapper{
+    border: 2px dotted black;
+    opacity: 0.5;
+  }
+  div.column:hover span.title {
+    width: 85%;
+  }
+  div.wrapper {
+    height: 299px;
+  }
+  div.column {
+    cursor: move;
+    width: 265px;
+    background: white;
+    float: left;
+    position: relative;
+    height: 305px;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+    .details-wrapper {
+      margin: 0 auto;
+      max-width: 190px;
+      position: relative;
+      min-height: 40px;
+    }
+    .edit-section {
+      display: none;
+    }
+    .edit-section input.title {
+      width: 74%;
+    }
+    .delete {
+      position: absolute;
+      top: 0px;
+      right: 42px;
+    }
+    .edit {
+      top: 0;
+      right: 4px;
+    }
+    .edit, .delete {
+      display: none;
+      position: absolute;
+    }
+    .edit-actions {
+      position: absolute;
+      top: 0;
+      right: 4px;
+    }
+    span.title {
+      font-size: 21px;
+      white-space: nowrap;
+      text-overflow:ellipsis;
+      overflow: hidden;
+      width: 100%;
+      display: block;
+    }
+  }
+}
+.action {
+  @include transition(all 0.3s ease-in-out);
+  cursor: pointer;
+  &.delete:hover,
+  &.cancel:hover {
+    color: red;
+  }
+  &.edit:hover,
+  &.approve:hover {
+    color: green;
+  }
+}
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
